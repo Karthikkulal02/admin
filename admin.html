@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="headerlogo">
+        <img src="images/image.png" alt="Ecolab Logo" class="logo">
+    </header>
+    <div class="container">
+        <div class="left">
+          <div class="header">
+            <h1 class="animation a1 heading">Admin Login</h1>
+            <h4 class="animation a2 ">Log in to your account using email and password</h4>
+          </div>
+          <div class="form">
+            <form id="loginForm" onsubmit="validateForm(event)">         
+                <label for="username" id="text">Username</label>
+                <input type="text" class="form-field " placeholder="Username" id="username" name="username" required>
+                
+                <label for="password" id="text">Password</label>
+                <input type="password" class="form-field " placeholder="Password" id="password" name="password" required>
+
+                <div id="errorMessage" class="error"></div>
+                
+                <button type="submit" class="animation_a6">Login</button>
+            
+            </form>
+          </div>
+        
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

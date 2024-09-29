@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert API</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+ </head>
+<body>
+    <header class="headerlogo"></header>
+        <img src="images/image.png" alt="Ecolab Logo" class="logo ecolab">
+    </header>
+
+    <div class="main-container">
+        <div class="left">
+            <div class="head">
+              <h1 class="heading">Insert API To Database</h1>
+            </div>
+        </div>
+
+        <div class="insert-form">
+      
+            <form id="insert-api-form"> 
+                
+                <label for="apiType">API Type:</label>
+                <select id="apiType" name="apiType" class="field">
+                    <option value="">---Select API Type---</option>
+                    <option value="proxy_apis">Proxy APIs</option>
+                    <option value="leased_assets_apis">Leased Assets APIs</option>
+                    <option value="user_registration_and_alignment_api">User Registration and alignment API</option>
+                    <option value="label_generator_apis">Label Generator APIs</option>
+                    <option value="gpra_apis">GPRA APIs</option>
+                    <option value="orders_entry_history_service_orders_apis">Orders Entry, History, Service Orders APIs</option>
+                    <option value="notification_apis">Notification APIs</option>
+                    <option value="ecolab_service_request">Ecolab Service Request APIs</option>
+                    <option value="3pl_apis">3PL APIs</option>
+                </select>
+
+                <label for="apiName">API Name:</label>
+                <input type="text" id="apiName" name="apiName" class="field">
+
+                <label for="ownerDeveloper">Owner/Developer:</label>
+                <input type="text" id="ownerDeveloper" name="ownerDeveloper" class="field" >
+
+                <label for="useCase">Use Case/Short Detail:</label>
+                <input type="text" id="useCase" name="useCase" class="field" >
+
+                <label for="mappingDocument">Mapping Document:</label>
+                <input type="text" id="mappingDocument" name="mappingDocument" class="field" >
+
+                <label for="postmanCollection">Postman Collection:</label><br>
+                <input type="text" id="postmanCollection" name="postmanCollection" class="field">
+
+                <label for="exchange">Exchange:</label>
+                <input type="text" id="exchange" name="exchange" class="field">
+
+                <label for="ldd">LDD:</label>
+                <input type="text" id="ldd" name="ldd" class="field">
+
+                <label for="azureRep">Azure Rep:</label>
+                <input type="text" id="azureRep" name="azureRep" class="field">
+
+                
+
+                
+                <div class="buttons">
+                    <button type="submit" class="btn">Submit</button>
+                    <button class="btn" id="back-btn" onclick="goToAdminPage()">Back</button>
+                </div>
+                
+          
+            </form>
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* { 
+    box-sizing: border-box; 
+}
+
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: #044ea0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+    overflow: auto; 
+}
+
+.container {
+    height: 100vh;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    height: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    margin-bottom: 60px; 
+}
+
+.error{
+    color:red;
+}
+
+head > link{
+    border-radius: 20px;
+}
+
+.left {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 45px;
+}
+
+.header > h1 {
+    margin: 0;
+    color: #326ab4;
+    font-size: 40px;
+}
+
+.header > h4 {
+margin-top: 10px;
+font-weight: normal;
+font-size: 15px;
+color: gray; 
+}
+
+.form {
+max-width: 80%;
+display: flex;
+flex-direction: column;
+}
+
+form > label {
+    color: rgb(24, 23, 23);
+    font-size: 18px;
+}
+
+
+.form-field {
+height: 46px;
+padding: 0 16px;
+border: 2px solid #ddd;
+border-radius: 4px;
+font-family: 'Times New Roman', Times, serif;
+outline: 0;
+transition: .2s;
+margin-top: 10px;
+margin-left: 4px;
+margin-bottom: 20px;
+width: 100%;
+}
+
+.form-field:focus {
+border-color: #0f7ef1;
+}
+
+button{
+padding: 14px 12px;
+width: 350px;
+border: 0;
+font-size: 18px;
+background:#0097ff; 
+border-radius: 10px;
+margin-top: 25px;
+color: #fff;
+letter-spacing: 1px;
+font-family: 'Times New Roman', Times, serif;
+cursor: pointer;
+}
+
+
+#password{
+    margin-left: 6px;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 10px;
+}
+
+
+/* Responsive Design */
+
+@media (min-width: 1025px) {
+    .container {
+        margin: 30px auto;
+      }
+    }
+     
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+    margin : 25px auto;
+    }
+    
+    .header > h1 {
+    font-size: 35px;
+    }
+    
+    .form-field {
+    font-size: 16px;
+    }
+    
+    button {
+    font-size: 16px;
+    padding: 12px 10px;
+    }
+}
+     
+@media (max-width: 600px) {
+    .container {
+    margin: 20px auto;
+    }
+    
+    .header > h1 {
+    font-size: 30px;
+    }
+    
+    .header > h4 {
+    font-size: 15px;
+    }
+    
+    .form-field {
+    font-size: 16px;
+    }
+    
+    button {
+    font-size: 16px;
+    padding: 12px 10px;
+    }
+}
